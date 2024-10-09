@@ -76,7 +76,7 @@ function Table() {
       </div>
 
       <CommonBtn
-        style={"bg-[#D9F99D] w-full"}
+        style={"bg-[#D9F99D] w-full mt-7"}
         handleOnClick={openModal}
       >
         اضافة جندى
