@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply px-5 mx-auto;
+  }
+}
+
+* {
+  font-family: "Kufam", sans-serif;
+  direction: rtl;
+}
+
+/* Modal Scrollbar */
+
+.modal::-webkit-scrollbar,
+.table-content::-webkit-scrollbar {
+  width: 4px !important;
+}
+.modal::-webkit-scrollbar-track,
+.table-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.modal::-webkit-scrollbar-thumb,
+.table-content::-webkit-scrollbar-thumb {
+  background: #d9f99d;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 480px) {
+  .Toastify__toast-container {
+    width: var(--toastify-toast-width)!important;
+  }
+
+  .Toastify__toast-container--top-left,
+  .Toastify__toast-container--top-center,
+  .Toastify__toast-container--top-right {
+    top: var(--toastify-toast-top)!important;
+  }
+}
